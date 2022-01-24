@@ -24,7 +24,10 @@ const FormiF = () => {
         // setData((data)=>{...data,...values});
         setData((prev) => ({ ...prev, ...values }));
         console.log(data);
-        nextStep()
+        if (step<2) {
+            nextStep()
+        }
+      
     }
 
     return (

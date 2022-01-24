@@ -20,7 +20,7 @@ const Form2 = ({data,nextStep,prevStep,handleSubmit}) => {
             <Form>
             <Field type="text" name="name" component={TextField} label="Name" variant="standard"></Field>
             <button type="submit"  disabled={!props.isValid} >nextStep</button>
-            <button onClick={prevStep}>prevstep</button>
+            <button  type="button" onClick={prevStep}>prevstep</button>
         </Form>
         )}
         </Formik>
